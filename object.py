@@ -18,11 +18,11 @@ class Car:
         all_cars.append(self)
     def __repr__(self):
         return f"{self.i}. {self.make} {self.model} {self.year}"
-    def accelerate(self, dx, dy):
+    def accelerate(self, dx, dy, dz):
         self.speedx+=dx
         self.speedy+=dy
         self.speedz+=dz
-    def brake(self, dx, dy):
+    def brake(self, dx, dy, dz):
         self.speedx-=dx
         self.speedy-=dy
         self.speedz+=dz
@@ -61,8 +61,3 @@ class Car:
             print(f"Car {self.i} and Car {car2.i} will collide in {k*itr} hours")
         else:
             print(f"Car {self.i} and Car {car2.i} will not collide")
-            
-Car.from_csv()
-print(all_cars[1].speedx)
-Car.list_cars()
-all_cars[0].time_to_collision(all_cars[1])
