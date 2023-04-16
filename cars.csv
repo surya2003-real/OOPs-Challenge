@@ -1,4 +1,4 @@
-make,model,year,speedx,speedy,x,y
-Hyundai,tucson,2020,10,15,0,0
-Hyundai,i20,2021,2,3,4,6
-Hyundai,creta,2019,12,12,5,6
+make,model,year,speedx,speedy,speedz,x,y,z
+Hyundai,tucson,2020,10,15,25,0,0,0
+Hyundai,i20,2021,2,3,5,2,3,5
+Hyundai,creta,2019,12,12,12,5,6,2
