@@ -39,7 +39,9 @@ class Car:
         with open('cars.csv', 'r') as f:
             items=list(csv.DictReader(f))
         for item in items:
-            Car(item['make'], item['model'], item['year'], item['speedx'], item['speedy'], item['x'], item['y'])
+            Car(item['make'], item['model'], item['year'], int(item['speedx']), int(item['speedy']), int(item['x']), int(item['y']))
 
 Car.from_csv()
+all_cars[1].accelerate(2, 3)
+print(all_cars[1].speedx)
 print(all_cars)
